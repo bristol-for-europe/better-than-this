@@ -1,6 +1,9 @@
 extends layout
 
 block content
+  div(id='fb-root')
+  script(async, defer, crossorigin='anonymous', src='https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0')
+
   div.container-fluid
     h1.title Do or Die? <br /> (We Are) <br /> Better Than This...
 
@@ -26,3 +29,9 @@ block content
         p After three years of endless back and forth, we are still facing a No Deal Brexit with no information about what a future Britain might look like.
         p The Government is planning to shutdown parliament to prevent debate over its plans to deliver Brexit at any cost. Parliament has not been suspended in this way since before 1979. 
         p (We Are) Better Than This 
+    
+    div.row.justify-content-center
+      div.col
+        div.fb-page(data-href='https://www.facebook.com/betterthanthisuk', data-tabs='timeline', data-small-header='false', data-adapt-container-width='true', data-hide-cover='false', data-show-facepile='true')
+          blockquote(cite='https://www.facebook.com/betterthanthisuk', class='fb-xfbml-parse-ignore')
+            a(href='https://www.facebook.com/betterthanthisuk') Better Than This
