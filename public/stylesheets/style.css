@@ -4,6 +4,7 @@
     text-align: center;
     color: #3D2E22;
     text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.6)
   }
 
   #above {
@@ -21,12 +22,12 @@
       background-image: url('/images/sunset-tree.jpg');
       background-size: auto 100%;
       background-position: right;
-      padding: 2em;
+      padding: 1em;
       color: black;
       font-size: 1.3em;
   }
 
   #above-right-overlay {
       background-color: rgba(255, 255, 255, 0.5);
-      padding: 1em;
+      padding: 0.5em;
   }
